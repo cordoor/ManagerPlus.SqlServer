@@ -11,7 +11,7 @@ ENV MSSQL_PID=Developer
 ENV MSSQL_TCP_PORT=$PORT
 
 # Setup SqlPackage
-WORKDIR $HOME
+WORKDIR /home/mssql
 COPY ./sqlpackage .
 COPY ./.bashrc .
 USER root
